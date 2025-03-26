@@ -1,18 +1,67 @@
-/* Error: Undefined variable.
- *   ,
- * 8 |     background-color: $--color-navy;
- *   |                       ^^^^^^^^^^^^^
- *   '
- *   scss\header.scss 8:23  @use
- *   scss\style.scss 2:1    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 8 \2502      background-color: $--color-navy;\d\a   \2502                        ^^^^^^^^^^^^^\a   \2575 \a   scss\\header.scss 8:23  @use\a   scss\\style.scss 2:1    root stylesheet";
+* {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 8%;
+  width: 100%;
+  background-color: #e07a5f;
+}
+
+.logo, .menu {
+  flex-basis: 50%;
+}
+
+.menu {
+  text-align: right;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e2a38;
+  color: #ede0d4;
+  position: relative;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.container-button-header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  /* left: 0;
+  right: 0; */
+  margin: 0 auto;
+}
+
+.button-header {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #e07a5f;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

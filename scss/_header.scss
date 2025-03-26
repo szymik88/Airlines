@@ -1,12 +1,12 @@
-@use 'variables.scss' as *;
+@use 'variables' as *;
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: $--color-navy;
-    color: $--color-beige;
+    background-color: $color-navy;
+    color: $color-beige;
     position: relative;
 }
 
@@ -29,6 +29,6 @@ h1 {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 1px solid $--color-teracota;
+    border: 1px solid $color-teracota;
     margin: 20px;
 }
