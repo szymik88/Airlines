@@ -1,11 +1,12 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background: url(../assets/img/big_bg_header.jpg) center/cover fixed;
+    background: url(../assets/img/big-bg-header.webp) center/cover fixed;
     background-position: 45%;
     color: $color-beige;
     position: relative;
@@ -25,8 +26,18 @@ h1 {
     font-weight: normal;
     text-align: center;
     font-size: 4rem;
-    flex-basis: 60%;
+    padding-top: 8rem;
     animation: animation-opacity 2.5s;
+
+    @include mq {
+        font-size: 7rem;
+    }
+    @include mq ('l') {
+        font-size: 9rem;
+    }
+    @include mq ('xl'){
+        font-size: 11rem;
+    }
 }
 
 .container-button-header {
@@ -41,15 +52,26 @@ h1 {
 }
 
 .button-header {
-    height: 100px;
-    width: 100px;
+    height: 7rem;
+    width: 7rem;
+
+    @include mq {
+        height: 8rem;
+        width: 8rem;
+    }
+    @include mq ('l') {
+        height: 10rem;
+        width: 10rem;
+    }
+
     margin: 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $color-teracota;
-    background-color: beige;
+    background-color: $color-purple;
+    border: 3px solid $color-teracota;
 
     &:nth-of-type(1){
     animation: animation-opacity 2s;

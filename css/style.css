@@ -27,6 +27,7 @@ nav {
   width: 100%;
   background-color: #e07a5f;
   z-index: 2;
+  color: #1e2a38;
 }
 
 .logo, .menu {
@@ -40,11 +41,30 @@ nav {
 
 .menu {
   text-align: right;
-  color: red;
+}
+.menu ul {
+  display: none;
+}
+@media screen and (min-width: 1124px) {
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 2.5rem;
+  }
 }
 
 .menu .material-symbols-outlined {
   font-size: 5rem;
+}
+
+.menu .material-symbols-outlined {
+  font-size: 5rem;
+}
+@media screen and (min-width: 1124px) {
+  .menu .material-symbols-outlined {
+    display: none;
+  }
 }
 
 header {
@@ -52,7 +72,7 @@ header {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  background: url(../assets/img/big_bg_header.jpg) center/cover fixed;
+  background: url(../assets/img/big-bg-header.webp) center/cover fixed;
   background-position: 45%;
   color: #ede0d4;
   position: relative;
@@ -71,8 +91,23 @@ h1 {
   font-weight: normal;
   text-align: center;
   font-size: 4rem;
-  flex-basis: 60%;
+  padding-top: 8rem;
   animation: animation-opacity 2.5s;
+}
+@media screen and (min-width: 726px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+@media screen and (min-width: 1124px) {
+  h1 {
+    font-size: 9rem;
+  }
+}
+@media screen and (min-width: 1324px) {
+  h1 {
+    font-size: 11rem;
+  }
 }
 
 .container-button-header {
@@ -87,15 +122,28 @@ h1 {
 }
 
 .button-header {
-  height: 100px;
-  width: 100px;
+  height: 7rem;
+  width: 7rem;
   margin: 20px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #e07a5f;
-  background-color: beige;
+  background-color: rgba(142, 0, 224, 0.0274509804);
+  border: 3px solid #e07a5f;
+}
+@media screen and (min-width: 726px) {
+  .button-header {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .button-header {
+    height: 10rem;
+    width: 10rem;
+  }
 }
 .button-header:nth-of-type(1) {
   animation: animation-opacity 2s;
