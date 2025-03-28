@@ -52,6 +52,30 @@ nav {
     list-style: none;
     font-size: 2.5rem;
   }
+  .menu ul li {
+    transition: 0.25s;
+    position: relative;
+    border-bottom: 2px solid solid transparent;
+  }
+  .menu ul li:before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    transform-origin: center;
+    background-color: rgba(30, 42, 56, 0.737254902);
+    transition: 0.25s;
+  }
+  .menu ul li:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  .menu ul li:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .menu .material-symbols-outlined {
