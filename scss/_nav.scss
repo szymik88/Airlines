@@ -41,20 +41,19 @@ nav {
                     content: '';
                     display: block;
                     height: 2px;
-                    width: 0%;
-                    left: 50%;
+                    width: 100%;
                     position: absolute;
                     bottom: 0;
-                    transform-origin: center;
+                    transform-origin: center; //Copilot
                     background-color: $color-navy-alpha;
-                    transition: 0.25s;
+                    transition: transform 0.25s;
+                    transform: scaleX(0); //Copilot
                 }
                 &:hover::before {
-                    width: 100%;
-                    left: 0;
+                    transform: scaleX(1); //Copilot
                 }
                 &:hover {
-                    transform: translateY(-5px);
+                    transform: translateY(-5px); //Copilot
                 }
             }
         }

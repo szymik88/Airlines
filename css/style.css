@@ -61,17 +61,16 @@ nav {
     content: "";
     display: block;
     height: 2px;
-    width: 0%;
-    left: 50%;
+    width: 100%;
     position: absolute;
     bottom: 0;
     transform-origin: center;
     background-color: rgba(30, 42, 56, 0.737254902);
-    transition: 0.25s;
+    transition: transform 0.25s;
+    transform: scaleX(0);
   }
   .menu ul li:hover::before {
-    width: 100%;
-    left: 0;
+    transform: scaleX(1);
   }
   .menu ul li:hover {
     transform: translateY(-5px);
