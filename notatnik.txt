@@ -1,0 +1,1 @@
+$ git merge dev //do przenisienia z development do main

@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 10px;
 }
@@ -116,7 +120,7 @@ h1 {
   font-size: 4rem;
   padding-top: 8rem;
   animation: animation-opacity 2.5s;
-  color: #0d0d0d;
+  color: #ede0d4;
 }
 @media screen and (min-width: 726px) {
   h1 {
@@ -198,6 +202,17 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+section {
+  min-height: 100vh;
+}
+section :nth-of-type(even) {
+  background-color: lightgray;
+}
+section h2 {
+  padding-top: 7rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

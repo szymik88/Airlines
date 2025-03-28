@@ -28,7 +28,7 @@ h1 {
     font-size: 4rem;
     padding-top: 8rem;
     animation: animation-opacity 2.5s;
-    color: #0d0d0d;
+    color: $color-beige;
 
     @include mq {
         font-size: 7rem;
