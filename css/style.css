@@ -116,6 +116,7 @@ h1 {
   font-size: 4rem;
   padding-top: 8rem;
   animation: animation-opacity 2.5s;
+  color: #0d0d0d;
 }
 @media screen and (min-width: 726px) {
   h1 {
@@ -160,6 +161,12 @@ h1 {
   .button-header {
     height: 8rem;
     width: 8rem;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .button-header:hover {
+    scale: 1.2;
+    border: 2px solid rgba(142, 0, 224, 0.0274509804);
   }
 }
 @media screen and (min-width: 1124px) {
@@ -180,7 +187,7 @@ h1 {
 .button-header:nth-of-type(4) {
   animation: animation-opacity 5s;
 }
-.button-header .material-symbols-outlined {
+.button-header .mterial-symbols-outlined {
   font-size: 4rem;
 }
 
