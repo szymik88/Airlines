@@ -54,3 +54,8 @@ modalBg.addEventListener('click', () => {
     
     modalBg.classList.remove('modal-window');
 });
+
+const menu_burger = document.querySelector('#menu');
+menu_burger.addEventListener('click', () => {
+    alert('click burger');
+});
