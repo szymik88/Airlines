@@ -35,33 +35,44 @@ a {
   width: 100%;
   height: 100vh;
   z-index: 3;
-  background-color: rgba(30, 42, 56, 0.831372549);
-  position: relative;
+  background-color: rgba(142, 0, 224, 0.0274509804);
 }
 .modal-window .title, .modal-window .desription {
   text-align: center;
   margin: 20px 0 0;
   font-size: 2rem;
 }
-
-.title {
+.modal-window .title {
   font-weight: bold;
-  font-size: 125%;
+  font-size: 200%;
 }
 
 #modal-window {
   background-color: #b7d3c1;
-  width: 50%;
-  height: 50%;
+  width: 95%;
+  height: 80%;
   border-radius: 0.6rem;
   position: relative;
+  padding: 10px;
+}
+@media screen and (min-width: 726px) {
+  #modal-window {
+    width: 50%;
+    height: 50%;
+  }
 }
 #modal-window .material-symbols-outlined {
   position: absolute;
-  top: -50px;
-  right: -50px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   font-size: 5rem;
+}
+@media screen and (min-width: 726px) {
+  #modal-window .material-symbols-outlined {
+    top: -41px;
+    right: -41px;
+  }
 }
 
 nav {
