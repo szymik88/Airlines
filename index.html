@@ -13,6 +13,13 @@
     <title>Znajdź Twoje połączenie</title>
 </head>
 <body>
+    <div id="modal" class="hide">
+        <div id="modal-window">
+                <span class="material-symbols-outlined">cancel</span>
+                <p id="title" class="title"></p>
+                <p id="description" class="description"></p>
+        </div>
+    </div>
     <header>
         <nav>
             <div class="logo">
@@ -21,20 +28,45 @@
             <div class="menu">
                 <span class="material-symbols-outlined">menu</span>
                 <ul>
-                    <li><a href="#offer">Oferta</a></li>
-                    <li><a href="#promotion">Promocje</a></li>
-                    <li><a href="#location">Lokalizacja</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
                     <li><a href="#about">O nas</a></li>
+                    <li><a href="#offer">Oferta</a></li>
+                    <li><a href="#location">Lokalizacje</a></li>
+                    <li><a href="#sales">Promocje</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
         </nav>
-        <h1>Znajdź dobre połączenia</h1>
+        <h1>Znajdź Twoje połączenie</h1>
         <div class="container-button-header">
-            <div class="button-header" id="search-button"><span class="material-symbols-outlined">search</span></div>
-            <div class="button-header"><span class="material-symbols-outlined">luggage</span></div>
-            <div class="button-header"><span class="material-symbols-outlined">airplane_ticket</span></div>
-            <div class="button-header"><span class="material-symbols-outlined">airline_seat_recline_extra</span></div>
+            <div class="button-header">
+                <div class="hide">
+                    <div id="descriptionTitle1">luggage</div>
+                    <div id="description1">Lorem ipsum dolor sit amet.</div>
+                </div>
+              
+                <span class="material-symbols-outlined">luggage</span>
+            </div>
+            <div class="button-header">
+                <div class="hide">
+                    <div id="descriptionTitle2">Search</div>
+                    <div id="description2">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <span class="material-symbols-outlined">search</span>
+            </div>
+            <div class="button-header">
+                <div class="hide">
+                    <div id="descriptionTitle3">Ticket</div>
+                    <div id="description3">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <span class="material-symbols-outlined"> airplane_ticket</span>
+            </div>
+            <div class="button-header">
+                <div class="hide">
+                    <div id="descriptionTitle4">Seats</div>
+                    <div id="description4">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <span class="material-symbols-outlined">airline_seat_recline_extra</span>
+            </div>
         </div>
     </header>
     <main>

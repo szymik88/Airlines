@@ -21,6 +21,49 @@ a {
   color: inherit;
 }
 
+.hide {
+  display: none;
+}
+
+.modal-window {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(30, 42, 56, 0.831372549);
+  position: relative;
+}
+.modal-window .title, .modal-window .desription {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 2rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 125%;
+}
+
+#modal-window {
+  background-color: #b7d3c1;
+  width: 50%;
+  height: 50%;
+  border-radius: 0.6rem;
+  position: relative;
+}
+#modal-window .material-symbols-outlined {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  cursor: pointer;
+  font-size: 5rem;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -32,6 +75,11 @@ nav {
   background-color: #e07a5f;
   z-index: 2;
   color: #1e2a38;
+  transition: 1s;
+}
+
+.nav-small {
+  height: 4%;
 }
 
 .logo, .menu {

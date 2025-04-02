@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 * {
     font-family: "Kanit", sans-serif;
     box-sizing: border-box;
@@ -20,3 +22,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.hide {
+    display: none;
+}
+
