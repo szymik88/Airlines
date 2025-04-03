@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; // Pozwala na zawijanie elementów, jeśli nie mieszczą się w jednej linii
+    gap: 20px; // Odstępy między kolumnami
+}
+
+.col {
+    flex: 1 1 100%; // Domyślnie zajmuje 100% szerokości
+}
+
+.col-l-50 {
+    @include mq('l') {
+        flex: 1 1 50%; // Na dużych ekranach zajmuje 50% szerokości
+    }
+}
+
+.col-xl-25 {
+    @include mq('xl') {
+        flex: 1 1 25%; // Na bardzo dużych ekranach zajmuje 25% szerokości
+    }
+}
