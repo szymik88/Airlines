@@ -35,7 +35,7 @@ a {
   width: 100%;
   height: 100vh;
   z-index: 3;
-  background-color: rgba(142, 0, 224, 0.0274509804);
+  background-color: rgba(30, 42, 56, 0.737254902);
 }
 .modal-window .title, .modal-window .desription {
   text-align: center;
@@ -138,6 +138,12 @@ nav {
   .menu ul li:hover {
     transform: translateY(-5px);
   }
+}
+
+.menu-small {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
 }
 
 .menu .material-symbols-outlined {

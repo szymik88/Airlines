@@ -66,6 +66,12 @@ nav {
 
 }
 
+.menu-small {
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+
 .menu .material-symbols-outlined {
     font-size: 5rem;
 }
