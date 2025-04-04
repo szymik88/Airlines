@@ -372,6 +372,36 @@ h1 {
   margin: 0;
 }
 
+input, textarea, button {
+  border-radius: 0.4rem;
+  font-size: 1.7rem;
+}
+
+input, textarea {
+  border: 1px solid #e07a5f;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 20px;
+  outline: 0;
+  resize: none;
+}
+input:focus, textarea:focus {
+  box-shadow: 0 0 1rem rgb(104, 104, 104);
+}
+
+button {
+  width: 40%;
+  padding: 1.4rem;
+  background-color: #1e2a38;
+  color: #ede0d4;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #e07a5f;
+  color: #1e2a38;
+}
+
 section {
   min-height: 100vh;
 }

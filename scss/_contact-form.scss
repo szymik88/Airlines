@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+input, textarea, button {
+    border-radius: 0.4rem;
+    font-size: 1.7rem;
+}
+
+input, textarea {
+  border: 1px solid $color-teracota;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 20px;
+  outline: 0;
+  resize: none;
+  &:focus {
+    box-shadow: 0 0 1rem rgb(104, 104, 104);
+  }
+}
+
+button {
+    width: 40%;
+    padding: 1.4rem ;
+    background-color: $color-navy;
+    color: $color-beige;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        background-color: $color-teracota;
+        color: $color-navy;
+    }
+}
