@@ -402,6 +402,35 @@ button:hover {
   color: #1e2a38;
 }
 
+.promotion-box {
+  background-color: #ede0d4;
+  color: #1e2a38;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.promotion-box p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 80%;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.promotion-box p:nth-of-type(1), .promotion-box p:nth-of-type(3) {
+  flex-basis: 10%;
+}
+.promotion-box span {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.promotion-box p {
+  font-size: 2rem;
+}
+
 section {
   min-height: 100vh;
 }
